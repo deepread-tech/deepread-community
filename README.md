@@ -28,7 +28,7 @@ New to DeepRead? Here's how to get started:
 
 1. Sign up at [deepread.tech](https://www.deepread.tech/)
 2. Get your API key from the dashboard
-3. Check out the [documentation](https://www.deepread.tech/doc)
+3. Check out the [documentation](https://www.deepread.tech/docs)
 4. Try the free tier (2,000 pages/month)
 
 ## How to Participate
@@ -55,7 +55,7 @@ Use [Issues](https://github.com/deepread-tech/deepread-community/issues) for:
 
 ## Resources
 
-- [Documentation](https://www.deepread.tech/doc)
+- [Documentation](https://www.deepread.tech/docs)
 - [Discord](https://discord.com/invite/pvzMsuVM)
 - [Twitter/X](https://twitter.com/Hello_DeepRead)
 - Email: hello@deepread.tech
