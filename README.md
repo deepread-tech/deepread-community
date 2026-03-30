@@ -57,7 +57,7 @@ Use [Issues](https://github.com/deepread-tech/deepread-community/issues) for:
 
 - [Documentation](https://www.deepread.tech/docs)
 - [Discord](https://discord.com/invite/pvzMsuVM)
-- [Twitter/X](https://twitter.com/Hello_DeepRead)
+- [Twitter/X](https://x.com/DeepReadAI)
 - Email: hello@deepread.tech
 
 ## Support
