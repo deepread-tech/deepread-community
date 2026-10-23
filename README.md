@@ -4,16 +4,17 @@ Welcome to the official community hub for [DeepRead](https://www.deepread.tech/)
 
 ## What is DeepRead?
 
-DeepRead is an AI-native document processing API that turns PDFs, scans, and images into structured data with 97%+ accuracy. Using multi-model consensus (GPT + Gemini + dual OCR), it flags uncertain fields for human review instead of guessing.
+DeepRead is an AI-native document processing API that turns PDFs, scans, and images into structured data, measured against other vendors on [deepread.tech/benchmarks](https://www.deepread.tech/benchmarks). It has two engines: Extract (one OCR pass) and Deep Extract (two OCR passes and an LLM judge); every field carries a review flag, so uncertain fields go to human review instead of being guessed.
 
-**Four capabilities, one API key:**
+**Three capabilities, one API key:**
 
-- **OCR & Structured Extraction** — Convert any document to text or structured JSON with per-field confidence scoring. Human-in-the-loop flags tell you exactly which fields need review.
-- **Form Filling** — Upload a blank PDF form + your data as JSON. AI detects fields visually, maps data semantically, fills the form, and quality-checks the result. Works on scanned, non-editable PDFs.
-- **PII Redaction** — Detect and redact 14 types of PII (names, SSNs, credit cards, medical records, etc.) with irreversible black bar redaction. Context-aware: knows doctor vs patient, institutional vs personal. Built for HIPAA/GDPR redaction workflows.
-- **BYOK (Bring Your Own Key)** — Connect your own OpenAI, Google, or OpenRouter API key via the dashboard. All processing routes through your account — zero DeepRead LLM costs, page quota skipped entirely.
+- **OCR & Structured Extraction** — Convert any document to text or structured JSON with per-field review flags (`needs_review`, `review_reason`) that tell you exactly which fields need review.
+- **Form Filling** (Enterprise plans) — Upload a blank PDF form + your data as JSON. AI detects fields visually, maps data semantically, fills the form, and quality-checks the result. Works on scanned, non-editable PDFs.
+- **PII Redaction** (Enterprise plans) — Detect and redact 14 types of PII (names, SSNs, credit cards, medical records, etc.) with irreversible black bar redaction. Context-aware: knows doctor vs patient, institutional vs personal. Built for HIPAA/GDPR redaction workflows.
 
-**Free tier:** 2,000 pages/month, no credit card required.
+Enterprise accounts can bring their own LLM key.
+
+**Free tier:** 2,000 pages/month, no credit card required. Extract $15 and Deep Extract $35 per 1,000 pages.
 
 ## Getting Started
 
@@ -21,6 +22,8 @@ DeepRead is an AI-native document processing API that turns PDFs, scans, and ima
 2. Get your API key (or use the agent device flow for automated setup)
 3. Try the [demo examples](https://github.com/deepread-tech/deepread-demo) — Python, Node.js, and cURL
 4. Add AI agent skills with `clawhub install uday390/deepread-ocr`
+5. Have a person check results in DeepRead: send `reviewer_email` with the document
+6. No code: use the n8n community node `n8n-nodes-deepread` 0.5.0
 
 ## Demo Repo
 
@@ -73,7 +76,9 @@ Use [Issues](https://github.com/deepread-tech/deepread-community/issues) for:
 - [Dashboard](https://www.deepread.tech/dashboard)
 - [Demo Repo](https://github.com/deepread-tech/deepread-demo)
 - [Skills Repo](https://github.com/deepread-tech/skills)
-- [Discord](https://discord.com/invite/pvzMsuVM)
+- [Discord](https://discord.gg/rzjvyZw3JQ)
+- [Slack](https://join.slack.com/t/deepreadinc/shared_invite/zt-49nzi7p2q-SKA9ThY0OsOypwSCyJnZZw)
+- [n8n node](https://www.npmjs.com/package/n8n-nodes-deepread)
 - [LinkedIn](https://www.linkedin.com/company/deepread-tech/)
 - Email: hello@deepread.tech
 
