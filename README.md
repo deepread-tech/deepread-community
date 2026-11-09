@@ -14,7 +14,7 @@ DeepRead is an AI-native document processing API that turns PDFs, scans, and ima
 
 Enterprise accounts can bring their own LLM key.
 
-**Free tier:** 2,000 pages/month, no credit card required. Extract $15 and Deep Extract $35 per 1,000 pages.
+**Free tier:** 2,000 pages/month, no credit card required. Extract $15 and Deep Extract $35 per 1,000 pages. Deep Extract Fast (`speed=fast`, about 2× faster, same accuracy) is $90 per 1,000 pages on Standard and Enterprise plans.
 
 ## Getting Started
 
